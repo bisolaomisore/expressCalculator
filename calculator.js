@@ -3,8 +3,9 @@ var express = require("express");
 var app = express();
 var PORT = 8080;
 
+// this is a get route.
 app.get('/:operator/:num1/:num2', function(req,res){
-	
+
 	var operator = req.params.operator
 	var num1 = parseInt(req.params.num1);
 	var num2 = parseInt(req.params.num2);
